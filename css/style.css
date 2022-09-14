@@ -460,7 +460,7 @@ form textarea {
  }
  .navbar {
   position: absolute;
-  top: -60px;
+  top: -600px;
   right: 0;
   left: 0;
   display: flex;
@@ -474,7 +474,7 @@ form textarea {
   padding: 1rem;
   margin: 1rem;
  }
- .navbar .active {
+ .navbar.active {
   top: 100%;
  }
  :root {
