@@ -9,7 +9,7 @@
 }
 
 :root {
- --bg-color: #01020d;
+ --bg-color: #020415;
  --text-color: #fff;
  --main-color: #eb4a4a;
  --second-color: gray;
@@ -38,6 +38,13 @@ header {
  padding: 22px 16%;
  border-bottom: 1px solid transparent;
  transition: all 0.4 ease;
+}
+
+header.sticky {
+ padding: 10px 16%;
+ background: var(--bg-color);
+ border-bottom: 1px solid #102a7e;
+ transition: 0.3s;
 }
 
 .logo img {
@@ -133,4 +140,50 @@ span {
  transform: scale(1) translateY(-5px);
  background: transparent;
  border: 1px solid var(--main-color);
+}
+
+/*** Home Section CSS Styles ***/
+
+.about {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ align-items: center;
+ gap: 3rem;
+}
+
+.about-text h4 {
+ margin: 10px 0;
+ color: var(--main-color);
+ font-size: 20px;
+ font-weight: 600;
+}
+
+.about-text h2 {
+ font-size: var(--h2-font);
+}
+
+.about-text p {
+ color: var(--second-color);
+ font-size: var(--p-font);
+ line-height: 30px;
+ margin-bottom: 2rem;
+}
+
+.about-gri {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 3rem;
+}
+
+.about-in h5 {
+ font-size: 22px;
+ font-weight: 600;
+}
+
+.about-img img {
+ height: auto;
+ width: 100%;
+ max-width: 460px;
 }
